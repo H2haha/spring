@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/spring.css" />
+    <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> -->
+    <title>模板</title>
+</head>
+
+<body>
+    <!-- CSS S -->
+    <style>
+
+    </style>
+    <!-- CSS E -->
+    <!-- loading begin -->
+    <div class="loadPage">
+        <div class="loadNum">0%</div>
+    </div>
+    <!-- loading end -->
+    <!-- <!-- music begin-->
+    <!-- <div class="songBox">
+    <span class="open"></span>
+    <span class="close"></span>
+</div> -->
+    <!-- music end-->
+    <!-- global S -->
+    <div class="global ease">
+        <div class="screen">
+            <!-- page 1 S -->
+            <section class="layout" id="layout_1">
+              <img src="images/banner1.gif" class="banner1">
+                <!-- 箭头 E -->
+            </section>
+            <!-- page 1 E -->
+            <!-- page 2 S -->
+            <section class="layout" id="layout_2">
+                <div class="banner2">
+                    <!-- 箭头 S -->
+                    <div class="swipeTip fadeOutUp"></div>
+                </div>
+            </section>
+            <!-- page 2 E -->
+            <!-- page 3 S -->
+            <section class="layout" id="layout_3">
+                <div class="banner3">
+                    <!-- 箭头 S -->
+                    <div class="swipeTip fadeOutUp"></div>
+                </div>
+            </section>
+            <!-- page 3 E -->
+            <!-- page 4 S -->
+            <section class="layout" id="layout_4">
+                <div class="banner4">
+                    <!-- 箭头 S -->
+                    <div class="swipeTip fadeOutUp"></div>
+                </div>
+            </section>
+            <!-- page 5 E -->
+            <section class="layout" id="layout_5">
+                <div class="banner5">
+                    <!-- 箭头 S -->
+                    <div class="swipeTip fadeOutUp"></div>
+                </div>
+            </section>
+            <!-- page5 E -->
+            <section class="layout" id="layout_6">
+                <div class="banner6">
+                    <img src="images/logo.png" class="logo">
+                    <div class="brand-bg">
+                        <ul class="brand-line1 clearfix">
+                            <li>
+                                <a><img src="images/brand1.png" id="brand1"></a>
+                            </li>
+                            <li>
+                                <a><img src="images/brand2.png"></a>
+                            </li>
+                            <li class="margin-right0">
+                                <a><img src="images/brand3.png"></a>
+                            </li>
+                        </ul>
+                        <div class="brand-line2">
+                           <a><img src="images/brand4.png"></a>
+                           <a><img src="images/brand5.png" class="margin-right0"></a>
+                        </div>
+                    </div>
+                    <!-- brand-bg end -->
+                      <div class="brand-bg2">
+                      	<div class="close" id="close1">×</div>
+                      	<div class="blessing">
+                                新春佳作庆团圆，年年岁岁酒言欢。
+                      	</div>
+                        	<div class="bless-ex">
+                               您是第XXXXX位翻到此条祝福的朋友,<br/>
+                               快来传递更多的祝福给您的家人和朋友吧。
+                      	</div>
+
+
+
+                      </div>
+                      <!-- brand-bg2 end -->
+
+
+
+
+                    <!-- 箭头 S -->
+                    <div class="swipeTip fadeOutUp"></div>
+                </div>
+            </section>
+            <!-- page5 E -->
+            <!-- page 6 S -->
+            <section class="layout" id="layout_14">
+                <a class="picVideo" href="#">
+                    <img src="images/videopic.jpg" alt="">
+                </a>
+                <div class="coverShare" id="coverShare"></div>
+                <div class="morejcBox">
+                    <a href="javascript:;" class="back_to_home"> <img src="http://y2.ifengimg.com/29daa33abbbc4bbc/2016/2/btn01.png" alt="" /></a>
+                    <a href="javascript:;" class="share_btn"> <img src="http://y2.ifengimg.com/29daa33abbbc4bbc/2016/2/btn02.png" alt="" /></a>
+                </div>
+            </section>
+            <!-- page 6 E -->
+        </div>
+    </div>
+    <!-- global E  -->
+    <div class="mask flexcontainer" id="mask">
+        <div class="mask-box">
+            <div class="mask-pic"><i></i></div>
+            <span>为了更好的体验，请将手机/平板竖过来</span>
+        </div>
+    </div>
+    <!-- <audio id="video1" src="http://y0.ifengimg.com/ad0d010d99c699f5/2015/3/H5music.mp3" autoplay="autoplay" Loop="Loop"></audio>
+ -->
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/s-zepoto.js"></script>
+    <script>
+    (function(doc, win) {
+        var _root = doc.documentElement,
+            resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            resizeCallback = function() {
+                var clientWidth = _root.clientWidth,
+                    fontSize = 10 * 10;
+                if (!clientWidth) return;
+                if (clientWidth < 1080) {
+                    fontSize = 100 * (clientWidth / 750);
+                } else {
+                    fontSize = 100 * (1080 / 750);
+                }
+                _root.style.fontSize = fontSize + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, resizeCallback, false);
+        doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+    })(document, window);
+    </script>
+</body>
+
+</html>
